@@ -9,9 +9,12 @@ export const AboutItem = () => {
     }
 
     const handleHomeButton = () => {
+        /*
         let name: string = 'ciclano';
-
         navigate(`/sobre/${name}`);
+        */
+
+        navigate('/');
     }
 
     return (

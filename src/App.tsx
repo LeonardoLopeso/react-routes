@@ -1,9 +1,5 @@
-import { Routes, Route } from 'react-router-dom'
-import { Home } from './pages/Home';
-import { About } from './pages/About';
-import { AboutItem } from './pages/AboutItem';
+import { MainRoutes } from './routes/MainRoutes';
 import styles from './App.module.css';
-import { NotFound } from './pages/NotFound';
 
 const App = () => {
   return (
@@ -13,14 +9,7 @@ const App = () => {
       </header>
       <hr />
       <div className={styles.container}>
-        
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/sobre" element={<About />} />
-          <Route path="/sobre/:slug" element={<AboutItem />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-
+        <MainRoutes />
       </div>  
       <hr />
       <footer>
